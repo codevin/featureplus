@@ -16,4 +16,15 @@ Instead of directly changing the codebase, we want codebase to be modified progr
 To facilitate these type of actions, we will have to model the codebase to 
 identify individually identifiable components which will support actions to add/remove code within them.
 
+# Status of Development
+
+Done
+* Document Objective
+* Brainstorm Approach and Architecture
+* Rough idea of API
+
+TODO
+* Creating APIs for driving example code (e.g. 2 page website)
+* ...
+
 
