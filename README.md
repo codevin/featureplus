@@ -15,6 +15,11 @@ While the concepts are fundamentally based on literate programming, we would lik
 
 # Developer workflow
 
+![Overall workflow][workflow]
+
+[workflow]: https://github.com/codevin/featureplus/docs/FeaturePlus.jpg
+
+
 The overall development approach will be as follows:
 
 1. There are two development trees. One is main-codebase which is centrally hosted, and allows any branch to be committed, compiled and create testable code. Normal developers will not necessarily be directly accessing this codebase. (They can have read only access.)
