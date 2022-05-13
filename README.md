@@ -17,6 +17,9 @@ While the concepts are fundamentally based on literate programming, we would lik
 
 ![Overall workflow][workflow]
 
+<img src="docs/FeaturePlus.jpg">
+
+
 [workflow]: https://github.com/codevin/featureplus/docs/FeaturePlus.jpg
 
 
