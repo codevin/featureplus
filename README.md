@@ -77,6 +77,32 @@ The Cons:
 * Code for a given feature is essentially a string (in feature codebase). This may become convenient because IDEs don't support it easily. 
 * Since two features may contribute a code inserted into single function, the local variables shouldn't clash. This must be guaranteed by some automation.
 
+# Current approaches
+
+Given any codebase, we should be able to easily reason about:
+ * What does given code do?
+ * Give a requirement/feature, does this code form a part of that requirement?
+ * What other code it is dependent upon
+ * What other code depends upon this code
+ * Whether this code introduces unintended side effects
+
+To achieve this, teams develop variety of conventions - sometimes enforced by 
+frameworks, some other time, it is enforced by training and code reviews. 
+A very large codebases will necessarily have to depend on testing suites to ensure 
+checkins don't break existing functionality.
+
+Most important, we desire that a code related to 
+specific feature is independent of other features. For e.g. if a single function has
+ lines of code belonging to different (independent) requirements, it is not a good thing.
+Instead, we can have them in different functions/modules which are then registered dynamically.
+
+Extensible functionality is often achieved through third party plugins, which is helpful when new code is accepted from external contributors. This will
+ require standardization of APIs - reducing the plugin dependencies to published guidelines of API. We can't expect this to work for micro level changes to features. (For e.g. ehancing plain search to advanced search.)
+
+In Feature plus, we achieve the code independence by creating a development time API which inserts code dynamically in main tree. More
+importantly, this API will be extensible as per local conventions. While one can have API to append a function to module, one can create an API 
+to add new menu element in UI, or to add new CLI parameter. 
+The implementation will then be dynamic and adopt to framework capabilities.
 
 # Status of Development
 
