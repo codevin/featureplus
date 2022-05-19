@@ -91,5 +91,6 @@ TODO
 
 # Related reading
 
+* [Literate Programming - Wikipedia](https://en.m.wikipedia.org/wiki/Literate_programming)
 * [Codebase as communication](https://buttondown.email/hillelwayne/archive/codebases-as-communication/)
 
