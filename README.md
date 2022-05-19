@@ -89,4 +89,7 @@ TODO
 * Creating APIs for driving example code (e.g. 2 page website)
 * ...
 
+# Related reading
+
+* [Codebase as communication](https://buttondown.email/hillelwayne/archive/codebases-as-communication/)
 
